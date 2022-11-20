@@ -20,10 +20,11 @@ public class main {
 	
 	    switch (opcao2) {
 	      case 1:
-	    	  serVivo.cadastrarSerVivo("1");
+	    	serVivo.cadastrarSerVivo("1");
 	        break;
 	      case 2:
-	    	  serVivo.cadastrarSerVivo("2");
+	    	serVivo.cadastrarSerVivo("2");
+	    	break;
 	      case 3:
 	        serVivo.cadastrarSerVivo("3");
 	        break;
