@@ -11,7 +11,7 @@ public class SerVivo {
 		EspecieMonera especieMonera = new EspecieMonera();
 		EspecieProtista especieProtista = new EspecieProtista();
 		
-		if(opcao.equalsIgnoreCase("1")) especieAnimalia.cadastrarAnimalia();
+		if(opcao == "1") especieAnimalia.cadastrarAnimalia();
 		if(opcao == "2") especieMonera.cadastrarMonera();
 		if(opcao == "3") especieProtista.cadastrarProtista();
 	}
