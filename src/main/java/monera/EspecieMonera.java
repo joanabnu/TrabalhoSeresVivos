@@ -3,7 +3,7 @@ package monera;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class EspecieMonera extends Classe {
+public class EspecieMonera extends ClasseMonera {
 
 	Scanner leia = new Scanner(System.in);
 

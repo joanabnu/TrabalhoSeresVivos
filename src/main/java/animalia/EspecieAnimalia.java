@@ -3,14 +3,17 @@ package animalia;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Especie extends Genero{
+public class EspecieAnimalia extends GeneroAnimalia{
 	
 	Scanner leia = new Scanner(System.in);
 	
+	Animalia animalia = new Animalia();
 	private String especie;
-	private ArrayList<Especie> especies = new ArrayList<>();
+	private ArrayList<EspecieAnimalia> especies = new ArrayList<>();
 		
-	public void cadastrarAnimal() {
+	public void cadastrarAnimalia() {
+		System.out.println("Digite o nome popular: ");
+		animalia.setNomePopular(leia.next());
 		System.out.println("Digite o filo: ");
 		setFilo(leia.next());
 		System.out.println("Digite a classe: ");

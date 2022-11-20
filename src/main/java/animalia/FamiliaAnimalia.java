@@ -1,6 +1,6 @@
 package animalia;
 
-public class Familia extends Ordem{
+public class FamiliaAnimalia extends OrdemAnimalia{
 	
 	private String familia;
 

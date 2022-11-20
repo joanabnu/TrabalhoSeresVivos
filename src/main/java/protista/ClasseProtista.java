@@ -1,6 +1,6 @@
 package protista;
 
-public class Classe extends Filo {
+public class ClasseProtista extends FiloProtista {
 
 	private String classe;
 

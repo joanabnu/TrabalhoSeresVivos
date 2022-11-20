@@ -1,6 +1,6 @@
-package animalia;
+package monera;
 
-public class Filo extends Animalia{
+public class FiloMonera extends monera {
 
 	private String filo;
 
@@ -11,5 +11,5 @@ public class Filo extends Animalia{
 	public void setFilo(String filo) {
 		this.filo = filo;
 	}
-	
+
 }

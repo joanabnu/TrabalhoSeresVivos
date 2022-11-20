@@ -3,7 +3,7 @@ package protista;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class EspecieProtista extends Classe {
+public class EspecieProtista extends ClasseProtista {
 
 	Scanner leia = new Scanner(System.in);
 

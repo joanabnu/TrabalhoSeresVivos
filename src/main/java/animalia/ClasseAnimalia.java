@@ -1,6 +1,6 @@
 package animalia;
 
-public class Classe extends Filo {
+public class ClasseAnimalia extends FiloAnimalia {
 	
 	private String classe;
 
