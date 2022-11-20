@@ -15,7 +15,7 @@ public class main {
     String opcao;
 
     do {
-	    System.out.println("O que você deseja cadastrar, \n 1 - Animal \n 2- Planta \n 3 - Monera \n 4 - Protista: ");
+	    System.out.println("O que você deseja cadastrar, \n 1 - Animal \n 2- Planta \n 3 - Monera \n 4 - Protista \n 5 - Fungi: ");
 	    int opcao2 = leia.nextInt();
 	
 	    switch (opcao2) {
@@ -31,6 +31,9 @@ public class main {
 	      case 4:
 	        serVivo.cadastrarSerVivo("4");
 	        break;
+	      case 5:
+		    serVivo.cadastrarSerVivo("5");
+		    break;
 	      default:
 	        System.out.println("Opção inválida");
 	        break;
