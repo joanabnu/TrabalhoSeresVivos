@@ -14,7 +14,7 @@ public class SerVivo {
 		EspecieProtista especieProtista = new EspecieProtista();
 		
 		if(opcao == "1") especieAnimalia.cadastrarAnimalia();
-		if(opcao == "2") especiePlantae.cadastrarPlantae();
+		if(opcao == "2") especiePlantae.cadastrarPlantae(); // especiePlantae.mostrarDados();//
 		if(opcao == "3") especieMonera.cadastrarMonera();
 		if(opcao == "4") especieProtista.cadastrarProtista();
 	}

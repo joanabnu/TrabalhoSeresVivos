@@ -34,6 +34,10 @@ public class EspeciePlantae extends Genero {
 		
 		especiePlantae.add(this);
 	}
+	
+	public void mostrarDados() {
+		
+	}
 
 	public String getEspecie() {
 		return especie;
