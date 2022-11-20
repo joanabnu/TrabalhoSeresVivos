@@ -11,6 +11,9 @@ public class EspeciePlantae extends Genero {
 	
 	public void cadastrarPlantae() {
 		
+		System.out.println("Digite o nome popular: ");
+		setNomePopular(scan.next());
+		
 		System.out.println("Digite o filo da planta: ");
 		setFilo(scan.next());
 		
