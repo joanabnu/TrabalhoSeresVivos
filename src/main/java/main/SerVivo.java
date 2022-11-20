@@ -4,6 +4,7 @@ import animalia.*;
 import monera.*;
 import protista.*;
 import plantae.*;
+import fungi.*;
 
 public class SerVivo {
 	
@@ -12,10 +13,12 @@ public class SerVivo {
 		EspeciePlantae especiePlantae = new EspeciePlantae();
 		EspecieMonera especieMonera = new EspecieMonera();
 		EspecieProtista especieProtista = new EspecieProtista();
+		EspecieFungi especieFungi = new EspecieFungi();
 		
 		if(opcao == "1") especieAnimalia.cadastrarAnimalia();
 		if(opcao == "2") especiePlantae.cadastrarPlantae(); // especiePlantae.mostrarDados();//
 		if(opcao == "3") especieMonera.cadastrarMonera();
 		if(opcao == "4") especieProtista.cadastrarProtista();
+		if(opcao == "5") especieFungi.cadastrarFungi();
 	}
 }
