@@ -1,6 +1,6 @@
 package monera;
 
-public class FiloMonera extends monera {
+public class FiloMonera extends Monera {
 
 	private String filo;
 
