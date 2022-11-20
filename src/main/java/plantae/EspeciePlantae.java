@@ -36,8 +36,14 @@ public class EspeciePlantae extends Genero {
 	}
 	
 	public void mostrarDados() {
-		
+		System.out.println("Reino: Plantae");
+		System.out.println("Filo: "+getFilo());
+		System.out.println("Classe: "+getClasse());
+		System.out.println("Ordem: "+getOrdem());
+		System.out.println("Familia: "+getFamilia());
+		System.out.println("Especie: "+getEspecie());
 	}
+	
 
 	public String getEspecie() {
 		return especie;
