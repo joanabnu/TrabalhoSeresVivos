@@ -1,6 +1,6 @@
 package plantae;
 
-public class Ordem extends Classe {
+public class OrdemPlantae extends ClassePlantae {
 	
 	private String ordem;
 

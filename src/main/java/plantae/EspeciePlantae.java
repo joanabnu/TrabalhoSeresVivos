@@ -3,10 +3,10 @@ package plantae;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class EspeciePlantae extends Genero {
+public class EspeciePlantae extends GeneroPlantae {
 	
 	private String especie;
-	private ArrayList<EspeciePlantae> especiePlantae = new ArrayList<>();
+	private ArrayList<EspeciePlantae> especies = new ArrayList<>();
 	Scanner scan = new Scanner(System.in);
 	
 	public void cadastrarPlantae() {
@@ -32,18 +32,17 @@ public class EspeciePlantae extends Genero {
 		System.out.println("Digite a espécie da planta: ");
 		setEspecie(scan.next());
 		
-		especiePlantae.add(this);
+		especies.add(this);
 	}
 	
 	public void mostrarDados() {
-		System.out.println("Reino: Plantae");
-		System.out.println("Filo: "+getFilo());
-		System.out.println("Classe: "+getClasse());
-		System.out.println("Ordem: "+getOrdem());
-		System.out.println("Familia: "+getFamilia());
-		System.out.println("Especie: "+getEspecie());
+		especies.forEach(System.out::print);
 	}
-	
+
+	public ArrayList<EspeciePlantae> getEspeciesPlantae() {
+		return especies;
+	}
+
 
 	public String getEspecie() {
 		return especie;
@@ -53,16 +52,9 @@ public class EspeciePlantae extends Genero {
 		this.especie = especie;
 	}
 	
-	
-	
-	public void showData() {
-		System.out.println("Reino: Plantae");
-		System.out.println("Filo: "+getFilo());
-		System.out.println("Classe: "+getClasse());
-		System.out.println("Ordem: "+getOrdem());
-		System.out.println("Familia: "+getFamilia());
-		System.out.println("Especie: "+getEspecie());
+	@Override
+	public String toString() {
+		return "\n Reino: Plantae \n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
 	}
-	
 
 }

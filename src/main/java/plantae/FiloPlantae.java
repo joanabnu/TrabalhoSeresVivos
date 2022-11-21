@@ -1,6 +1,6 @@
 package plantae;
 
-public class Filo extends Plantae {
+public class FiloPlantae extends Plantae {
 	
 	private String filo;
 

@@ -30,6 +30,10 @@ public class EspecieMonera extends GeneroMonera {
 		especies.add(this);
 
 	}
+	
+	public void mostrarDados() {
+		especies.forEach(System.out::print);
+	}
 
 	public String getEspecie() {
 		return especie;
@@ -37,6 +41,11 @@ public class EspecieMonera extends GeneroMonera {
 
 	public void setEspecie(String especie) {
 		this.especie = especie;
+	}
+	
+	@Override
+	public String toString() {
+		return "\n Reino: Animalia \n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
 	}
 
 }
