@@ -12,26 +12,27 @@ public class EspecieAnimalia extends GeneroAnimalia{
 	private ArrayList<EspecieAnimalia> especies = new ArrayList<>();
 		
 	public void cadastrarAnimalia() {
-		System.out.println("Digite o nome popular: ");
-		animalia.setNomePopular(leia.next());
-		System.out.println("Digite o filo: ");
-		setFilo(leia.next());
-		System.out.println("Digite a classe: ");
-		setClasse(leia.next());
-		System.out.println("Digite a ordem: ");
-		setOrdem(leia.next());
-		System.out.println("Digite a família: ");
-		setFamilia(leia.next());
-		System.out.println("Digite o gênero: ");
-		setGenero(leia.next());
-		System.out.println("Digite a espécie: ");
-		setEspecie(leia.next());
+		EspecieAnimalia especieAnimalia = new EspecieAnimalia();
 		
-		especies.add(this);
-
+		System.out.println("Digite o nome popular: ");
+		especieAnimalia.setNomePopular(leia.next());
+		System.out.println("Digite o filo: ");
+		especieAnimalia.setFilo(leia.next());
+		System.out.println("Digite a classe: ");
+		especieAnimalia.setClasse(leia.next());
+		System.out.println("Digite a ordem: ");
+		especieAnimalia.setOrdem(leia.next());
+		System.out.println("Digite a família: ");
+		especieAnimalia.setFamilia(leia.next());
+		System.out.println("Digite o gênero: ");
+		especieAnimalia.setGenero(leia.next());
+		System.out.println("Digite a espécie: ");
+		especieAnimalia.setEspecie(leia.next());
+		
+		especies.add(especieAnimalia);
 	}
 	
-	public void mostrarDados() {
+	public void mostrarDados() {		
 		especies.forEach(System.out::print);
 	}
 	

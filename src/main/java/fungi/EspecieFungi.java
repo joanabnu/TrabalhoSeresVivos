@@ -12,22 +12,24 @@ public class EspecieFungi extends GeneroFungi {
 	private ArrayList<EspecieFungi> especies = new ArrayList<>();
 	
 	public void cadastrarFungi() {
-		System.out.println("Digite o nome popular: ");
-		fungi.setNomePopular(scan.next());
-		System.out.println("Digite o filo: ");
-		setFilo(scan.next());
-		System.out.println("Digite a classe: ");
-		setClasse(scan.next());
-		System.out.println("Digite a ordem: ");
-		setOrdem(scan.next());
-		System.out.println("Digite a família: ");
-		setFamilia(scan.next());
-		System.out.println("Digite o gênero: ");
-		setGenero(scan.next());
-		System.out.println("Digite a espécie: ");
-		setEspecie(scan.next());
+		EspecieFungi especieFungi = new EspecieFungi();
 		
-		especies.add(this);
+		System.out.println("Digite o nome popular: ");
+		especieFungi.setNomePopular(scan.next());
+		System.out.println("Digite o filo: ");
+		especieFungi.setFilo(scan.next());
+		System.out.println("Digite a classe: ");
+		especieFungi.setClasse(scan.next());
+		System.out.println("Digite a ordem: ");
+		especieFungi.setOrdem(scan.next());
+		System.out.println("Digite a família: ");
+		especieFungi.setFamilia(scan.next());
+		System.out.println("Digite o gênero: ");
+		especieFungi.setGenero(scan.next());
+		System.out.println("Digite a espécie: ");
+		especieFungi.setEspecie(scan.next());
+		
+		especies.add(especieFungi);
 
 	}
 	

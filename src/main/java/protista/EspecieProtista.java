@@ -12,22 +12,24 @@ public class EspecieProtista extends GeneroProtista {
 	private ArrayList<EspecieProtista> especies = new ArrayList<>();
 
 	public void cadastrarProtista() {
+		EspecieProtista especieProtista = new EspecieProtista();
+		
 		System.out.println("Digite o nome popular: ");
-		protista.setNomePopular(leia.next());
+		especieProtista.setNomePopular(leia.next());
 		System.out.println("Digite o filo: ");
-		setFilo(leia.next());
+		especieProtista.setFilo(leia.next());
 		System.out.println("Digite a classe: ");
-		setClasse(leia.next());
+		especieProtista.setClasse(leia.next());
 		System.out.println("Digite a ordem: ");
-		setOrdem(leia.next());
+		especieProtista.setOrdem(leia.next());
 		System.out.println("Digite a família: ");
-		setFamilia(leia.next());
+		especieProtista.setFamilia(leia.next());
 		System.out.println("Digite o gênero: ");
-		setGenero(leia.next());
+		especieProtista.setGenero(leia.next());
 		System.out.println("Digite a espécie: ");
-		setEspecie(leia.next());
+		especieProtista.setEspecie(leia.next());
 
-		especies.add(this);
+		especies.add(especieProtista);
 
 	}
 	

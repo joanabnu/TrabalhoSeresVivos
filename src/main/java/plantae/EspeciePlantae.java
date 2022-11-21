@@ -3,36 +3,34 @@ package plantae;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import animalia.EspecieAnimalia;
+
 public class EspeciePlantae extends GeneroPlantae {
+	
+	Scanner leia = new Scanner(System.in);
 	
 	private String especie;
 	private ArrayList<EspeciePlantae> especies = new ArrayList<>();
-	Scanner scan = new Scanner(System.in);
 	
 	public void cadastrarPlantae() {
+		EspeciePlantae especiePlantae = new EspeciePlantae();
 		
 		System.out.println("Digite o nome popular: ");
-		setNomePopular(scan.next());
+		especiePlantae.setNomePopular(leia.next());
+		System.out.println("Digite o filo: ");
+		especiePlantae.setFilo(leia.next());
+		System.out.println("Digite a classe: ");
+		especiePlantae.setClasse(leia.next());
+		System.out.println("Digite a ordem: ");
+		especiePlantae.setOrdem(leia.next());
+		System.out.println("Digite a família: ");
+		especiePlantae.setFamilia(leia.next());
+		System.out.println("Digite o gênero: ");
+		especiePlantae.setGenero(leia.next());
+		System.out.println("Digite a espécie: ");
+		especiePlantae.setEspecie(leia.next());
 		
-		System.out.println("Digite o filo da planta: ");
-		setFilo(scan.next());
-		
-		System.out.println("Digite a classe da planta: ");
-		setClasse(scan.next());
-		
-		System.out.println("Digite a ordem da planta: ");
-		setOrdem(scan.next());
-		
-		System.out.println("Digite a família da planta: ");
-		setFamilia(scan.next());
-		
-		System.out.println("Digite o gênero planta: ");
-		setGenero(scan.next());
-		
-		System.out.println("Digite a espécie da planta: ");
-		setEspecie(scan.next());
-		
-		especies.add(this);
+		especies.add(especiePlantae);	
 	}
 	
 	public void mostrarDados() {

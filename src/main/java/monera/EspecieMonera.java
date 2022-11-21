@@ -12,22 +12,24 @@ public class EspecieMonera extends GeneroMonera {
 	private ArrayList<EspecieMonera> especies = new ArrayList<>();
 
 	public void cadastrarMonera() {
+		EspecieMonera especieMonera = new EspecieMonera();
+		
 		System.out.println("Digite o nome popular: ");
-		monera.setNomePopular(leia.next());
+		especieMonera.setNomePopular(leia.next());
 		System.out.println("Digite o filo: ");
-		setFilo(leia.next());
+		especieMonera.setFilo(leia.next());
 		System.out.println("Digite a classe: ");
-		setClasse(leia.next());
+		especieMonera.setClasse(leia.next());
 		System.out.println("Digite a ordem: ");
-		setOrdem(leia.next());
+		especieMonera.setOrdem(leia.next());
 		System.out.println("Digite a família: ");
-		setFamilia(leia.next());
+		especieMonera.setFamilia(leia.next());
 		System.out.println("Digite o gênero: ");
-		setGenero(leia.next());
+		especieMonera.setGenero(leia.next());
 		System.out.println("Digite a espécie: ");
-		setEspecie(leia.next());
+		especieMonera.setEspecie(leia.next());
 
-		especies.add(this);
+		especies.add(especieMonera);
 
 	}
 	
