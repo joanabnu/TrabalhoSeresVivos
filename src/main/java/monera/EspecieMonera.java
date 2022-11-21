@@ -47,7 +47,7 @@ public class EspecieMonera extends GeneroMonera {
 	
 	@Override
 	public String toString() {
-		return "\n Reino: Animalia \n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
+		return "\n Reino: Monera \n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
 	}
 
 }
