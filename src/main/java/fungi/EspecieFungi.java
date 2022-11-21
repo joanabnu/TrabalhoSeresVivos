@@ -34,6 +34,7 @@ public class EspecieFungi extends GeneroFungi {
 	}
 	
 	public void mostrarDados() {
+		System.out.println("Reino Fungi");
 		especies.forEach(System.out::print);
 
 	}
@@ -49,7 +50,7 @@ public class EspecieFungi extends GeneroFungi {
 	
 	@Override
 	public String toString() {
-		return "\n Reino: Fungi \n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
+		return "\n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
 	}
 
 }

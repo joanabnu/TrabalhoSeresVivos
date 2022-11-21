@@ -34,6 +34,7 @@ public class EspeciePlantae extends GeneroPlantae {
 	}
 	
 	public void mostrarDados() {
+		System.out.println("Reino Plantae");
 		especies.forEach(System.out::print);
 	}
 
@@ -52,7 +53,7 @@ public class EspeciePlantae extends GeneroPlantae {
 	
 	@Override
 	public String toString() {
-		return "\n Reino: Plantae \n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
+		return "\n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
 	}
 
 }

@@ -32,7 +32,8 @@ public class EspecieAnimalia extends GeneroAnimalia{
 		especies.add(especieAnimalia);
 	}
 	
-	public void mostrarDados() {		
+	public void mostrarDados() {
+		System.out.println("Reino Animalia");
 		especies.forEach(System.out::print);
 	}
 	
@@ -46,7 +47,7 @@ public class EspecieAnimalia extends GeneroAnimalia{
 	
 	@Override
 	public String toString() {
-		return "\n Reino: Animalia \n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
+		return "\n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
 	}
 
 }

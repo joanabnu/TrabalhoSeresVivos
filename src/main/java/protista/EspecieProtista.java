@@ -34,6 +34,7 @@ public class EspecieProtista extends GeneroProtista {
 	}
 	
 	public void mostrarDados() {
+		System.out.println("Reino Protista");
 		especies.forEach(System.out::print);
 	}
 
@@ -47,7 +48,7 @@ public class EspecieProtista extends GeneroProtista {
 	
 	@Override
 	public String toString() {
-		return "\n Reino: Protista \n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
+		return "\n Filo: " + getFilo() +"\n Classe: " + getClasse() + "\n Ordem: " + getOrdem() + "\n Família: " + getFamilia() + "\n Espécie: " + getEspecie() + "\n -----";
 	}
 
 }
